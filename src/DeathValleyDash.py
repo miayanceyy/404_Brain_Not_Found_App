@@ -29,7 +29,7 @@ def get_openai_response(prompt):
 
     try:
         response_data = response.json()
-        print("API Response:", json.dumps(response_data, indent=2))  # Print the full response
+        #print("API Response:", json.dumps(response_data, indent=2))  # Print the full response
 
         return response_data["choices"][0]["message"]["content"]
     
