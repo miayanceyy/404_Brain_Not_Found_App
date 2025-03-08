@@ -3219,3 +3219,45 @@ input, select, textarea {
 			}
 
 	}
+	.progress-container {
+		margin: 20px 0 30px 0;
+		max-width: 600px;
+	  }
+	  
+	  .progress-bar {
+		width: 100%;
+		background-color: #f1f1f1;
+		border-radius: 5px;
+		margin: 10px 0;
+		overflow: hidden;
+	  }
+	  
+	  .progress {
+		height: 30px;
+		background-color: #F56600; /* Clemson orange */
+		text-align: center;
+		line-height: 30px;
+		color: white;
+		font-weight: bold;
+		transition: width 0.5s ease-in-out;
+	  }
+	  
+	  .location-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-top: 10px;
+	  }
+	  
+	  .location-item {
+		flex-basis: 48%;
+		margin-bottom: 10px;
+		padding: 8px;
+		background-color: #f9f9f9;
+		border-radius: 5px;
+		transition: all 0.3s ease;
+	  }
+	  
+	  .location-item.found {
+		background-color: #E0F7E0;
+	  }
