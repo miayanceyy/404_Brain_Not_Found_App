@@ -1,6 +1,12 @@
 import os
 import requests
 import json
+from flask import Flask, request, jsonify
+import openai
+
+app = Flask(__name__)
+
+@app.route('/send_location', methods=['POST'])
 
 def get_openai_response(prompt):
     api_key = os.getenv("OPENAI_API_KEY")
