@@ -1,12 +1,10 @@
 import os
 import requests
 import json
-from flask import Flask, request, jsonify
-import openai
 
-app = Flask(__name__)
+#app = Flask(__name__)
 
-@app.route('/send_location', methods=['POST'])
+#@app.route('/send_location', methods=['POST'])
 
 def get_openai_response(prompt):
     api_key = os.getenv("OPENAI_API_KEY")
@@ -29,7 +27,7 @@ def get_openai_response(prompt):
 
     try:
         response_data = response.json()
-        #print("API Response:", json.dumps(response_data, indent=2))  # Print the full response
+        print("API Response:", json.dumps(response_data, indent=2))  # Print the full response
 
         return response_data["choices"][0]["message"]["content"]
     
