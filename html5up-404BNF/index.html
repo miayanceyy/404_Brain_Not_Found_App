@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Strata by HTML5 UP</title>
+		<title>DeathValleyDash - Clemson Scavenger Hunt</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -17,53 +17,117 @@
 			<header id="header">
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-					<h1><strong>I am Strata</strong>, a super simple<br />
-					responsive site template freebie<br />
-					crafted by <a href="http://html5up.net">HTML5 UP</a>.</h1>
+					<h1><strong>DeathValleyDash</strong> AI Riddle Guide</h1>
+					
+					<!-- Chatbot Container -->
+					<div id="chatbot-container">
+						<div id="chat-messages">
+							<div class="bot-message">Welcome to the DeathValleyDash! I'll guide you with riddles to help you find hidden locations around Clemson. Ready to start?</div>
+						</div>
+						<div id="chat-input-area">
+							<input type="text" id="user-input" placeholder="Type your answer...">
+							<button id="send-button">Send</button>
+						</div>
+					</div>
 				</div>
 			</header>
 
 		<!-- Main -->
 			<div id="main">
 
-				<!-- One -->
+				<!-- Location Tracking -->
 				<p>Click the button to get your coordinates.</p>
 				<button onclick="getLocation()">Try It</button>
 				<p id="demo"></p>
-				
+
 				<!-- Simple Progress Bar -->
 				<div style="margin: 20px 0; width: 100%;">
-				  <h3>Scavenger Hunt Progress</h3>
-				  <div style="width: 100%; background-color: #f1f1f1; height: 30px; border-radius: 5px;">
-					<div id="hunt-progress" style="width: 0%; height: 30px; background-color: #F56600; text-align: center; line-height: 30px; color: white; font-weight: bold;">0/5</div>
-				  </div>
-				  <div style="margin-top: 10px;">
-					<div id="location1" style="padding: 8px; background-color: #f9f9f9; margin-bottom: 5px; border-radius: 5px;">🔒 Location 1</div>
-					<div id="location2" style="padding: 8px; background-color: #f9f9f9; margin-bottom: 5px; border-radius: 5px;">🔒 Location 2</div>
-					<div id="location3" style="padding: 8px; background-color: #f9f9f9; margin-bottom: 5px; border-radius: 5px;">🔒 Location 3</div>
-					<div id="location4" style="padding: 8px; background-color: #f9f9f9; margin-bottom: 5px; border-radius: 5px;">🔒 Location 4</div>
-					<div id="location5" style="padding: 8px; background-color: #f9f9f9; margin-bottom: 5px; border-radius: 5px;">🔒 Location 5</div>
-				  </div>
+					<h3>Scavenger Hunt Progress</h3>
+					<div style="width: 100%; background-color: #f1f1f1; height: 30px; border-radius: 5px;">
+						<div id="hunt-progress" style="width: 0%; height: 30px; background-color: #F56600; text-align: center; line-height: 30px; color: white; font-weight: bold;">0/5</div>
+					</div>
+					<div style="margin-top: 10px;">
+						<div id="location1" style="padding: 8px; background-color: #f9f9f9; margin-bottom: 5px; border-radius: 5px;">🔒 Location 1</div>
+						<div id="location2" style="padding: 8px; background-color: #f9f9f9; margin-bottom: 5px; border-radius: 5px;">🔒 Location 2</div>
+						<div id="location3" style="padding: 8px; background-color: #f9f9f9; margin-bottom: 5px; border-radius: 5px;">🔒 Location 3</div>
+						<div id="location4" style="padding: 8px; background-color: #f9f9f9; margin-bottom: 5px; border-radius: 5px;">🔒 Location 4</div>
+						<div id="location5" style="padding: 8px; background-color: #f9f9f9; margin-bottom: 5px; border-radius: 5px;">🔒 Location 5</div>
+					</div>
 				</div>
-				
+
+				<!-- One -->
 				<section id="one">
-				<!-- DeathValleyDash -->
-				<section id="DeathValleyDash">
-					<div id="main">
-						<section>
-							<h2>DeathValleyDash Scavenger Hunt</h2>
-							<p>Explore Clemson's campus in this interactive scavenger hunt! Track your location and discover hidden landmarks around campus.</p>
-							
+					<header class="major">
+						<h2>DeathValleyDash Scavenger Hunt</h2>
+					</header>
+					<p>Explore Clemson's campus in this interactive scavenger hunt! Track your location and discover hidden landmarks around campus. Follow the riddles from our AI guide and use your phone's GPS to find each location.</p>
+					<ul class="actions">
+						<li><a href="#two" class="button">Learn More</a></li>
+					</ul>
+				</section>
+
+				<!-- Two -->
+				<section id="two">
+					<h2>How It Works</h2>
+					<div class="row">
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+							<h3>1. Get Riddles</h3>
+							<p>Interact with our AI chatbot to receive riddles about campus locations.</p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+							<h3>2. Explore Campus</h3>
+							<p>Use your phone's GPS to navigate to the locations you think match the riddles.</p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+							<h3>3. Track Progress</h3>
+							<p>Watch your progress bar fill as you discover each location on campus.</p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+							<h3>4. Win Prizes</h3>
+							<p>Complete the hunt to earn Clemson-themed rewards and bragging rights!</p>
+						</article>
+					</div>
+				</section>
+
+				<!-- Three -->
+				<section id="three">
+					<h2>Get In Touch</h2>
+					<p>Have questions about the DeathValleyDash scavenger hunt? Contact our team for assistance.</p>
+					<div class="row">
+						<div class="col-8 col-12-small">
+							<form method="post" action="#">
+								<div class="row gtr-uniform gtr-50">
+									<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+									<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+									<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+								</div>
+							</form>
 							<ul class="actions">
-								<li><a href="#" onclick="startTracking(); return false;" class="button primary">Start the Hunt</a></li>
+								<li><input type="submit" value="Send Message" /></li>
 							</ul>
-							
-							<div class="box">
-								<h3>Location Tracker</h3>
-								<div id="coordinates">Waiting for location...</div>
-								<div id="output" class="mt-4">Start the hunt to discover Clemson landmarks!</div>
-							</div>
-						</section>
+						</div>
+						<div class="col-4 col-12-small">
+							<ul class="labeled-icons">
+								<li>
+									<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+									Clemson University<br />
+									Clemson, SC 29634<br />
+									United States
+								</li>
+								<li>
+									<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+									(864) 656-3311
+								</li>
+								<li>
+									<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+									<a href="#">info@deathvalleydash.com</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</section>
 			</div>
@@ -74,11 +138,11 @@
 					<ul class="icons">
 						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; 404BrainNotFound</li><li>Design: <a href="http://html5up.net">HTML5 UP</a> | Customized for CUHackIt 2025</li>
 					</ul>
 				</div>
 			</footer>
@@ -91,8 +155,10 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-<!--DeathValleyDash assets-->
-
+		<!--DeathValleyDash assets-->
 			<script src="assets/js/script.js"></script>
+			<script src="assets/js/chatbot.js"></script>
+			<script src="assets/js/progress.js"></script>
+
 	</body>
 </html>
