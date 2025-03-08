@@ -3220,44 +3220,35 @@ input, select, textarea {
 
 	}
 	.progress-container {
-		margin: 20px 0 30px 0;
-		max-width: 600px;
-	  }
-	  
-	  .progress-bar {
-		width: 100%;
-		background-color: #f1f1f1;
-		border-radius: 5px;
-		margin: 10px 0;
-		overflow: hidden;
-	  }
-	  
-	  .progress {
-		height: 30px;
-		background-color: #F56600; /* Clemson orange */
-		text-align: center;
-		line-height: 30px;
-		color: white;
-		font-weight: bold;
-		transition: width 0.5s ease-in-out;
-	  }
-	  
-	  .location-list {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		margin-top: 10px;
-	  }
-	  
-	  .location-item {
-		flex-basis: 48%;
-		margin-bottom: 10px;
-		padding: 8px;
-		background-color: #f9f9f9;
-		border-radius: 5px;
-		transition: all 0.3s ease;
-	  }
-	  
-	  .location-item.found {
-		background-color: #E0F7E0;
-	  }
+  margin: 20px 0 30px 0;
+  max-width: 600px;
+}
+/* Force full width for hunt components */
+section .hunt-progress-container,
+.hunt-progress-bar,
+.hunt-progress,
+.hunt-location-list,
+.row .hunt-progress-container {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  position: relative !important;
+  box-sizing: border-box !important;
+}
+
+/* Reset any floats */
+.hunt-progress-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Make sure the row doesn't have weird margins */
+.row.hunt-row {
+  margin: 0 !important;
+}
